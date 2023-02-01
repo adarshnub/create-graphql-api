@@ -2,9 +2,9 @@ import Sequelize from 'sequelize';
 
 var db = {}
 
-const sequelize = new Sequelize('new_schema1', 'graphql', '123456', {
+const sequelize = new Sequelize('graph1', 'root', '123456', {
     host: 'localhost',
-    port: '8006',
+    port: '3306',
     dialect: 'mysql',
     define: {
         freezeTableName: true,

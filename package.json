@@ -2,9 +2,7 @@
     "name": "graphql-express-migrating-mysql",
     "version": "1.0.0",
     "description": "",
-    
-        
-    
+    "homepage": "",
     "main": "index.js",
     "scripts": {
         "start": "set NODE_OPTIONS=--openssl-legacy-provider && npm-run-all --parallel build:watch run:watch",

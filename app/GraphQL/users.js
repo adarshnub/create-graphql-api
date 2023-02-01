@@ -3,7 +3,7 @@ import  db from '../database'
 
 export const typeDefs = gql`
     extend type Query {
-        users: [Users]
+        users: [User]
         user(id: ID!) : User
     }
     type User {
