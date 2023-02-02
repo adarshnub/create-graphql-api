@@ -16,6 +16,6 @@ export const typeDefs = gql`
 export const resolvers = {
     Query: {
         users: async () =>db.users.findAll(),
-        user: async (obj,args,context,info) => db.users.findByPk(args.id),
+        user: async (parent,args,context,info) => db.users.findByPk(args.id),
     },
 }

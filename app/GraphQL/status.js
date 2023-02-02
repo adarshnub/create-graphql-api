@@ -15,7 +15,7 @@ export const typeDefs = gql`
 `
 export const resolvers = {
     Query: {
-        statuses: async () =>db.users.findAll(),
-        status: async (obj,args,context,info) => db.users.findByPk(args.id),
+        statuses: async () =>db.status.findAll(),
+        status: async (parent,args) => db.status.findByPk(args.id),
     },
 }

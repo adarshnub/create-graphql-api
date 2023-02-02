@@ -16,6 +16,6 @@ export const typeDefs = gql`
 export const resolvers = {
     Query: {
         priorities: async () =>db.priorities.findAll(),
-        priority: async (obj,args,context,info) => db.priorities.findByPk(args.id),
+        priority: async (parent,args,context,info) => db.priorities.findByPk(args.id),
     },
 }
